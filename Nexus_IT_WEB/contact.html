@@ -41,7 +41,7 @@
 
             <a href="index.html" class="logo">
 
-                <img src="images/logo.png"
+                <img src="images/logo.webp"
                      alt="NEXUS IT">
 
                 <div class="logo-text">
@@ -67,6 +67,16 @@
                 <li><a href="contact.html" class="active">Kontakt</a></li>
 
             </ul>
+
+            <div class="hamburger">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
 
             <a href="contact.html"
                class="btn-primary">
@@ -135,121 +145,84 @@
 
                 </h2>
 
-                <form>
+                <form action="send.php" method="POST">
 
                     <div class="input-group">
 
-                        <label>
+                        <label>Jméno</label>
 
-                            Jméno
-
-                        </label>
-
-                        <input type="text"
-                               placeholder="Vaše jméno">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Vaše jméno"
+                            required>
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label>E-mail</label>
 
-                            E-mail
-
-                        </label>
-
-                        <input type="email"
-                               placeholder="vas@email.cz">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="vas@email.cz"
+                            required>
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label>Telefon</label>
 
-                            Telefon
-
-                        </label>
-
-                        <input type="tel"
-                               placeholder="+420">
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="+420">
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label>Služba</label>
 
-                            Služba
+                        <select name="service">
 
-                        </label>
+                            <option>Vývoj webů a aplikací</option>
 
-                        <select>
+                            <option>Správa IT infrastruktury</option>
 
-                            <option>
+                            <option>Kybernetická bezpečnost</option>
 
-                                Vývoj webů a aplikací
+                            <option>Cloudová řešení</option>
 
-                            </option>
+                            <option>IT poradenství</option>
 
-                            <option>
-
-                                Správa IT infrastruktury
-
-                            </option>
-
-                            <option>
-
-                                Kybernetická bezpečnost
-
-                            </option>
-
-                            <option>
-
-                                Cloudová řešení
-
-                            </option>
-
-                            <option>
-
-                                IT poradenství
-
-                            </option>
-
-                            <option>
-
-                                Technická podpora
-
-                            </option>
+                            <option>Technická podpora</option>
 
                         </select>
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label>Zpráva</label>
 
-                            Zpráva
-
-                        </label>
-
-                        <textarea rows="6"
-                                  placeholder="Jak vám můžeme pomoci?"></textarea>
+                        <textarea
+                            rows="6"
+                            name="message"
+                            placeholder="Jak vám můžeme pomoci?"
+                            required></textarea>
 
                     </div>
 
 
-
-                    <button class="btn-primary">
+                    <button type="submit"
+                            class="btn-primary">
 
                         Odeslat zprávu
 
@@ -264,7 +237,7 @@
 
                 <div class="contact-card">
 
-                    <img src="images/icon-email.png"
+                    <img src="images/icon-email.webp"
                          alt="Email">
 
                     <h3>
@@ -285,7 +258,7 @@
 
                 <div class="contact-card">
 
-                    <img src="images/icon-phone.png"
+                    <img src="images/icon-phone.webp"
                          alt="Telefon">
 
                     <h3>
@@ -306,7 +279,7 @@
 
                 <div class="contact-card">
 
-                    <img src="images/icon-location.png"
+                    <img src="images/icon-location.webp"
                          alt="Adresa">
 
                     <h3>
@@ -440,7 +413,7 @@
 
                 <div class="footer-logo">
 
-                    <img src="images/logo.png"
+                    <img src="images/logo.webp"
                          alt="NEXUS IT">
 
                     <div>
@@ -609,7 +582,7 @@
 
                 <div class="footer-contact">
 
-                    <img src="images/icon-email.png"
+                    <img src="images/icon-email.webp"
                          alt="Email">
 
                     <span>
@@ -624,7 +597,7 @@
 
                 <div class="footer-contact">
 
-                    <img src="images/icon-phone.png"
+                    <img src="images/icon-phone.webp"
                          alt="Telefon">
 
                     <span>
@@ -639,7 +612,7 @@
 
                 <div class="footer-contact">
 
-                    <img src="images/icon-location.png"
+                    <img src="images/icon-location.webp"
                          alt="Adresa">
 
                     <span>
@@ -655,19 +628,25 @@
         </div>
 
 
+<div class="footer-bottom">
 
-        <div class="footer-bottom">
+    <p>
 
-            <p>
+        © 2026 NEXUS IT. Všechna práva vyhrazena.
 
-                © 2026 NEXUS IT.
-                Všechna práva vyhrazena.
+    </p>
 
-            </p>
+    <div class="footer-legal">
 
-        </div>
+        <a href="gdpr.html">
+
+            GDPR
+
+        </a>
 
     </div>
+
+</div>
 
 </footer>
 
